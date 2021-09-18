@@ -1,0 +1,59 @@
+.Input1{
+    width: 17vw;
+    border: none;
+    color: black;
+    padding: 10px ;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.Input-review{
+    width: 17vw;
+    height: 5vh;
+    border: none;
+    color: black;
+    padding: 10px ;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.Container-addShow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font: bolder;
+}
+
+.Button:hover{
+    background-color: grey;
+}
+
+.Add-show-title{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: x-large;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: Black;
+    text-decoration: underline;
+}

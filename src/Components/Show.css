@@ -1,0 +1,73 @@
+.Shows {
+    border:solid 2px black;
+    margin: 10px;
+    /* width: fit-content; */
+    background-color: grey;
+    display: flex;
+    width: 36vw;
+    border-radius: 11px;
+}
+
+.img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.Show-title{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: xx-large;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    padding: 5px;
+}
+
+.Show-review1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: x-large;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:white;
+    padding: 5px;
+}
+.Review-container{
+    background-color: lightgrey;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+}
+
+.Button-container{
+    float: right;
+    margin-top: 1px;
+}
+
+.Delete-button{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    /* padding: 10px 20px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font: bolder;
+}
+
+.Show-review2{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+.Username{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 5px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
