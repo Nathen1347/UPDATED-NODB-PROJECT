@@ -7,10 +7,10 @@ const Search = (props) => {
         <h1 className='Web-name'>ReviewCentral</h1>
       </div>
       <div>
-          <input className='Input' onChange={e => props.handleSearchInput(e.target.value)} placeholder={'Search Shows'} type='text'/>
+          <input className='Input' onChange={e => props.handleSearchInput(e.target.value)} placeholder={'Search Your Reviewed Shows...'} type='text'/>
       </div>
       <div className='Sign-in'>
-          <button className='Button'>Sign-In</button>
+          <button className='Button'>My Profile</button>
       </div>
     </div>
   );

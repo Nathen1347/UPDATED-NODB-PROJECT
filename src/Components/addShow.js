@@ -9,7 +9,7 @@ class AddShow extends Component {
       showTitle: "",
       imgUrl: "",
       review: "",
-      userName: ""
+      episodesWatched: ''
     };
   }
   handleNameInput = (e) => {
@@ -24,8 +24,8 @@ class AddShow extends Component {
     this.setState({ review: e.target.value });
   };
 
-  handleUserNameInput = (e) => {
-    this.setState({userName: e.target.value})
+  handleWatchedInput = (e) => {
+    this.setState({episodesWatched: e.target.value})
   }
 
   addNewShow = () => {
@@ -33,7 +33,7 @@ class AddShow extends Component {
       title: this.state.showTitle,
       imgUrl: this.state.imgUrl,
       review: this.state.review,
-      userName: this.state.userName
+      episodesWatched: this.state.episodesWatched
     };
     axios
       .post("/api/shows", body)
@@ -47,9 +47,10 @@ class AddShow extends Component {
           <h2 className='Add-show-title'>REVIEW YOUR FAVORITE SHOW</h2>
         </div>
         <div>
-            <input onChange={this.handleUserNameInput}
-            placeholder='Username'
-            className='Input1'/>
+            <input onChange={this.handleWatchedInput}
+            placeholder='Total Watched Episodes'
+            className='Input1'
+            type='text' />
         </div>
         <div>
           <input

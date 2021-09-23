@@ -6,12 +6,12 @@ function getShows(req, res){
 }
 
 function addShow(req, res){
-    const {title , imgUrl, review, userName } = req.body;
+    const {title , imgUrl, review, episodesWatched } = req.body;
     const newShow = {
         title: title,
         imgUrl: imgUrl,
         review: review,
-        userName: userName
+        episodesWatched: episodesWatched
     }
     shows.push(newShow);
     res.status(200).send(shows);

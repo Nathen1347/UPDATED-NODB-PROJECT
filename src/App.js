@@ -9,7 +9,7 @@ class App extends Component {
     super();
     this.state = {
       shows: [],
-      // review: "", 
+      review: "", 
       searchShow: ''
     };
   }
@@ -52,6 +52,7 @@ class App extends Component {
     return (
       <div className='App'>
         <div><Search handleSearchInput={this.handleSearchInput} /></div>
+          <div><h2 className='My-reviews'>MY REVIEWS</h2></div>
         <div className='Show-list'>
           <div className="Show">
           <Showlist
