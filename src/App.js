@@ -28,9 +28,9 @@ class App extends Component {
   //   this.setState({ review: e.target.value });
   // };
 
-  updateShowReview = (id) => {
+  updateShowReview = (id, review) => {
     axios
-      .put(`/api/shows/${id}/${this.state.review}`)
+      .put(`/api/shows/${id}/${review}`)
       .then(({ data }) => this.setState({ shows: data }))
       .catch((err) => console.log(err));
   };

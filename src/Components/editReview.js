@@ -25,7 +25,7 @@ class EditReview extends Component {
             />
             <button
               className='Add-Button'
-              onClick={() => this.props.updateShowReview(this.props.show.id)}
+              onClick={() => this.props.updateShowReview(this.props.show.id, this.state.review)}
             >
               Add
             </button>

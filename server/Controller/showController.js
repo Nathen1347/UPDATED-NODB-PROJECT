@@ -18,9 +18,10 @@ function addShow(req, res){
 }
 
 function editShow(req, res){
+    const {id, review} = req.params;
     let newShowArr = shows.map(show => {
-        if(req.params.id === show.id){
-            return {review : req.params.review}
+        if(+id === show.id){
+            return {...show, review}
         } else {
             return show
         }
@@ -31,7 +32,7 @@ function editShow(req, res){
 
 function deleteShow(req, res){
     const {deleteId} = req.query;
-    const deleteIndex = shows.findIndex(show => show.id === deleteId);
+    const deleteIndex = shows.findIndex(show => show.id === +deleteId);
     shows.splice(deleteIndex, 1)
 
     res.status(200).send(shows)
